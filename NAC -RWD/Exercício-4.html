@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fixa Cadastral</title>
+  <style>
+  * {
+    font-family: Arial;
+  }
+
+  input{
+    background-color: #ddd;
+    border-color: #333;
+  }
+
+   .header h2{
+     text-align: center;
+     color: darkgrey;
+     font-weight: bolder;
+     padding: 10px;
+
+   }
+   .dados-pessoais{
+      text-align: center;
+   }
+
+   .dados-pessoais form{
+    text-align: center;
+    margin: 2px 2px;
+    padding: 2px;
+    width: 50%;
+    height: 200px;
+   }
+
+ .dados-pessoais div {
+   display: block;
+   margin: 2px 2px;
+   padding: 2px;
+
+ }
+
+ .long {
+   margin: 3px 3px;
+   padding: 3px;
+
+ }
+
+ .short {
+
+   margin: 3px 3px;
+   padding: 3px;
+
+ }
+</style>
+</head>
+
+
+<body>
+
+<div class = "header">
+  <h2>Cadastro de Usuário</h2>
+</div>
+
+<div class = "dados-pessoais">
+  <center>
+    <form method="post" action="cadastrar.html">
+  <fieldset>
+    <legend>Dados Pessoais:</legend>
+    <div class="long">
+    <label for="nome">Nome:
+      <input type="text" name="nome" size=70/>
+    </label>
+  </div>
+  <div class = "short">
+    <label for="rg">RG:
+      <input type="text" name="rg" size="30"/>
+    </label>
+    <label>CPF:
+        <input type="text" name="cpf" size="30"/>
+    </label>
+  </div>
+  <div class="long">
+    <label><p>Endereço:
+      <input type="text" name="endereco" size="70"/>
+    </label>
+  </div>
+  <div class = "short">
+    <label>Gênero:
+    <select name = "genero">
+      <option value = "f">Feminino</option>
+      <option value = "m">Masculino</option>
+    </select>
+    </label>
+     <label>Data de nascimento:
+  <input type="date" name = "data"/>
+</label>
+<div>
+<label>Situação Civil:
+  <input type="radio" name= "situacao-civil" value="s" checked>
+  Solteira(o)
+  <input type="radio" name= "situacao-civil" value="c">
+  Casada(o)
+  <input type="radio" name= "situacao-civil" value="v">
+  Víuva(o)
+</label>
+</div>
+<div>
+  <input type="submit" value="Cadastrar"/>
+</div>
+</div>
+</form>
+</center>
+</fieldset>
+</body>
+</html>
